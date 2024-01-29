@@ -55,13 +55,12 @@ const data = [
   },
 ];
 
-async function populateTable() {
+function populateTable() {
   try {
     const tableBody = document.querySelector("#table tbody");
 
     // Loop through the data and create table rows
     data.forEach((e) => {
-      console.log("e", e);
       const row = document.createElement("tr");
       row.innerHTML = `
         <td>${e.fields.date}</td>
