@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .root {
+        width: 100%;
+        background-color: aqua;
+        padding: 50px;
+        display: table;
+        border-spacing: 50px;
+        box-sizing: border-box;
+      }
+      .row {
+        display: table-row;
+      }
+      .cell {
+        display: table-cell;
+        border: 1px solid white;
+        padding: 50px;
+        text-align: center;
+        position: relative;
+      }
+      .tooltip {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: white;
+        padding: 5px;
+      }
+      .cell:hover .tooltip {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="root">
+      <div class="row">
+        <div class="cell">
+          Header 1
+          <div class="tooltip">Tooltip</div>
+        </div>
+        <div class="cell">
+          Header 2
+          <div class="tooltip">Tooltip</div>
+        </div>
+        <div class="cell">
+          Header 3
+          <div class="tooltip">Tooltip</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell">
+          Row 1
+          <div class="tooltip">Tooltip</div>
+        </div>
+        <div class="cell">
+          Row 1
+          <div class="tooltip">Tooltip</div>
+        </div>
+        <div class="cell">
+          Row 1
+          <div class="tooltip">Tooltip</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell">
+          Row 2
+          <div class="tooltip">Tooltip</div>
+        </div>
+        <div class="cell">
+          Row 2
+          <div class="tooltip">Tooltip</div>
+        </div>
+        <div class="cell">
+          Row 2
+          <div class="tooltip">Tooltip</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell">
+          Row 3
+          <div class="tooltip">Tooltip</div>
+        </div>
+        <div class="cell">
+          Row 3
+          <div class="tooltip">Tooltip</div>
+        </div>
+        <div class="cell">
+          Row 3
+          <div class="tooltip">Tooltip</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
